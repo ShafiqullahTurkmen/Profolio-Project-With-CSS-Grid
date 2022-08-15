@@ -303,9 +303,9 @@ Sidebar
   justify-items: center;
 }
 
-.social-icons {
+.social-icons a{
   font-size: 1.5rem;
-  color: var(--clr-grey-1);
+  color: hsl(209, 61%, 16%);
   transition: var(--transition);
 }
 
@@ -333,6 +333,10 @@ Sidebar
 Hero
 ===============
 */
+
+.hero {
+  
+}
 /* underline added to globals */
 
 /*
