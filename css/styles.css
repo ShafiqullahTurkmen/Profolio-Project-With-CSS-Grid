@@ -388,7 +388,7 @@ Hero
     grid-template-columns: 1fr 1fr;
   }
 
-  .hero-img::before {
+  .hero-img::before, .about-img::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -432,7 +432,24 @@ About
   justify-self: center;
 }
 
+@media screen and (min-width: 992px) {
+  .about-center {
+    grid-template-columns: 1fr 1fr;
+  }
 
+  .about-img {
+    position: relative;
+  }
+
+  .about-img::before {
+    right: 0;
+    left: -2rem;
+  }
+
+  .about-info {
+    align-self: center;
+  }
+}
 
 /*
 =============== 
