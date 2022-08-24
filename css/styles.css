@@ -590,7 +590,42 @@ Projects
 
 @media screen and (min-width: 992px) {
   .projects-center {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .projects-center {
+    display: grid;
+    grid-template-rows: 200px 200px;
+    row-gap: 2rem;
+  
+    grid-template-areas: "g b b"
+                         "g c d";
+  }
+
+  .project-img {
+    height: 100%;
+  }
+
+  .project {
+    height: 100%;
+  }
+
+  .project-1 {
+    grid-area: g;   
+  }
+
+  .project-2 {
+    grid-area: b;
+  }
+
+  .project-3 {
+    grid-area: c;
+  }
+
+  .project-4 {
+    grid-area: d;
   }
 }
 
